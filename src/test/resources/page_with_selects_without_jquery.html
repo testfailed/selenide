@@ -162,6 +162,10 @@
 <script type="text/javascript">
       var commandDuration = 100;
 
+      setInterval(() => {
+        document.getElementById('dynamic-content-container').innerHTML += '.';
+        }, 20);
+
       setTimeout(function() {document.getElementById('container').innerHTML = '<div id="dynamic-content-container"></div>';}, commandDuration*3);
       setTimeout(function() {document.getElementById('dynamic-content-container').innerHTML = '<span id="dynamic-content">dynamic content</span>';}, commandDuration*4);
       setTimeout(function() {document.getElementById('dynamic-content-container').innerHTML += '<span id="dynamic-content2">dynamic content2</span>';}, commandDuration*5);
