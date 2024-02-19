@@ -49,7 +49,7 @@ jobs:
       - name: Setup Firefox
         if: ${{ matrix.gradle-task != 'check' }}
         uses: browser-actions/setup-firefox@latest
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.gradle/caches
